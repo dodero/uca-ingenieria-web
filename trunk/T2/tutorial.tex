@@ -163,10 +163,26 @@ Y por otra parte el controlador:
 
 \subsection{Relacionando con GORM}
 
+Ahora vamos a crear una relación de uno a muchos unidireccional para ello modificamos la clase {\it Author}, definiendo que ha escrito muchos libros:
+
 \lstinputlisting[style=Java]{resources/AuthorGORM.groovy}
 
-\lstinputlisting[style=Java]{resources/BookGORM.groovy}
+En el caso de la clase {\it Book} no es necesario modificarla pero si se deseara crear una relación bidireccional habría que añadir la siguiente línea de código:
 
-\subsection{Modificando un controlador generado}
+\begin{itemize}
+\item static belongsTo = [author:Author]
+\end{itemize}
+
+%\lstinputlisting[style=Java]{resources/BookGORM.groovy}
+
+%\subsection{Modificando un controlador generado}
+
+%%% Los controladores generados que he visto estan compilados.
+
 \subsection{Cambiemos de estilo}
+
+Grails tiene por defecto una hoja de estilo que se encuentra en el directorio {\it mi-proyecto/web-app/css/main.css} en el siguiente documento hemos modificado el color de los enlaces y los encabezados $<$h1$>$. Posteriormente se mostrará como crear nuevas vistas con GSP y se añadiran nueva hojas de estilos.
+
+\lstinputlisting[style=Java]{resources/main.css} 
+
 \end{document}
