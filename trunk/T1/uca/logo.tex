@@ -1,0 +1,53 @@
+\usepackage{charter,helvet}
+\usepackage{a4wide,fancyhdr}
+\usepackage{color,array,graphicx}
+
+\definecolor{p308}{cmyk}{1,0,0,0.51}
+\definecolor{p152}{cmyk}{0,0.51,1,0}
+\definecolor{pcg9}{cmyk}{0,0,0,0.65}
+
+\newcommand{\lv}{\color{p152}\vline}
+\setlength{\arrayrulewidth}{1pt}
+\setlength{\extrarowheight}{-1ex}
+
+\fancyhf{}
+\setlength{\headheight}{50pt}
+
+\lhead
+{
+  \footnotesize
+  \begin{tabular}{@{}p{5cm}}
+        \includegraphics[height=12ex]{uca/uca}
+  \end{tabular}
+}
+
+\chead
+{
+%
+}
+
+\rhead
+{
+  \footnotesize
+  \begin{tabular}{!{\lv}p{3.5cm}}
+    \color{pcg9}
+    Ingeniería Web               \newline
+    \color{p308}
+    Ingeniería Informática       \newline
+%    \mbox{}                                 \newline
+    \mbox{}
+  \end{tabular}
+%  \footnotesize
+%  \begin{tabular}{!{\lv}p{5cm}}
+%    \color{pcg9}
+%    Escuela Superior de Ingeniería          \newline
+%    C/ Chile, 1. 11002 Cádiz                \newline
+%    \makebox[2em]{Tel.\hfill} 956\,01\,5138 \newline
+%    \makebox[2em]{Fax \hfill} 956\,01\,5139
+%  \end{tabular}
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\pagestyle{fancy}

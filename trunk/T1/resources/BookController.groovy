@@ -1,6 +1,5 @@
 package org.example
 
-class BookController { 
-	
+class BookController { 	
 	def scaffold = Book 	
 }
