@@ -1,6 +1,5 @@
 package org.example
 
-class Book { 
-		
+class Book {
 	String title 
 }

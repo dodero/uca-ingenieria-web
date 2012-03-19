@@ -26,10 +26,10 @@ environments {
     production {
         dataSource {
             dbCreate = "update"
-			driverClassName = "com.mysql.jdbc.Driver"
+            driverClassName = "com.mysql.jdbc.Driver"
             url = "jdbc:mysql://localhost/mi-proyecto"
-			username="root"
-			password="root"
+            username="root"
+            password="root"
         }
     }
 }
